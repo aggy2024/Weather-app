@@ -63,7 +63,7 @@ main {
   color: rgba (39, 33, 66, 0.4);
   font-weight: 500;
 }
-.weather-app.details strong {
+.weather-app-details strong {
   color: #f65252;
 }
 
