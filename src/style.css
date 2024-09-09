@@ -58,7 +58,7 @@ main {
   justify-content: space-between;
 }
 .weather-app-details {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 20px;
   color: rgba (39, 33, 66, 0.4);
   font-weight: 500;
