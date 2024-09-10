@@ -19,7 +19,7 @@ function refreshWeather(response) {
   iconElement = '<img src= "${response.data.condition.icon_url}" class="weather-app-icon" />'
 }
 
-function formatDays(date) {
+function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let days = [
