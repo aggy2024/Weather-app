@@ -67,11 +67,11 @@ function getForecast(city) {
 
 
 function displayForecast(response) {
-  let forecastHtml = '';
+  let forecastHtml = "";
 
 
   response.data.daily.forEach(function (day, index) {
-    if (index > 5) {
+    if (index < 5) {
     forecastHtml =
       forecastHtml +
       `
@@ -85,10 +85,11 @@ function displayForecast(response) {
             </div>
             <div class="weather-forecast-temperature">{$Math.round(day.temperature.minimum)}°</div>
           </div>
-        </div >
+        </div>
     `;
   }  
   });
+  
   let forecast = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
