@@ -69,7 +69,6 @@ function getForecast(city) {
   axios(apiUrl).then(displayForecast);
 }
 
-
 function displayForecast(response) {
  forecastHtml = "";
 
